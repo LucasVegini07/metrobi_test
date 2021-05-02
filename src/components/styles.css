@@ -1,0 +1,44 @@
+.header{
+  height:40px;
+  width: 100%;
+  background-color: rgb(108, 209, 250);
+}
+
+.hero{
+  height: 150px;
+  width: 100%;
+  background: rgb(226, 198, 226);
+}
+
+.sidebar{
+  height: 270px;
+  width: 100%;
+  background: rgb(90, 148, 90);
+}
+.maincontent{
+  height: 300px;
+  width: 100%;
+  background: #ffcf40;
+}
+.extracontent{
+  height: 120px;
+  width: 100%;
+  background: grey;
+}
+.relatedimages{
+  height: 25vh;
+  width: 100%;
+  background: green;
+}
+.relatedposts{
+  height: 25vh;
+  width: 100%;
+  background: pink;
+}
+
+.footer{
+  width: 100%;
+  background-color: orange;
+  margin-bottom: 8px;
+}
+
