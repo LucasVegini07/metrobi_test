@@ -1,44 +1,67 @@
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  flex-wrap: wrap;
+}
+
+.contentColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentItem {
+  display: flex;
+}
+
+.contentRow {
+  display: flex;
+  flex-direction: row;
+}
+
 .header{
   height:40px;
-  width: 100%;
+  width: 50vw;
   background-color: rgb(108, 209, 250);
 }
 
 .hero{
-  height: 150px;
-  width: 100%;
+  height: 25vh;
+  display: flex;
+  width: 20vw;
   background: rgb(226, 198, 226);
 }
 
 .sidebar{
-  height: 270px;
-  width: 100%;
+  height: 35vh;
+  width: 20vw;
   background: rgb(90, 148, 90);
 }
 .maincontent{
-  height: 300px;
-  width: 100%;
+  height: 40vh;
+  width: 30vw;
   background: #ffcf40;
 }
 .extracontent{
-  height: 120px;
-  width: 100%;
+  height: 20vh;
+  width: 30vw;
   background: grey;
 }
 .relatedimages{
-  height: 25vh;
-  width: 100%;
+  height: 10vh;
+    width: 35vw;
   background: green;
 }
 .relatedposts{
-  height: 25vh;
-  width: 100%;
+  height: 10vh;
+  width: 15vw;
   background: pink;
 }
 
 .footer{
-  width: 100%;
+  height:40px;
+  width: 50vw;
   background-color: orange;
   margin-bottom: 8px;
 }
-

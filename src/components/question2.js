@@ -4,7 +4,6 @@ import {
   Button,
   Typography
 } from "@material-ui/core";
-import '././styles.css'
 
 export default class Question2 extends Component {
 
@@ -17,18 +16,15 @@ export default class Question2 extends Component {
     this.setState({ [name]: value });
   };
 
+  wait = (timeToDelay) => new Promise((resolve) => setTimeout(resolve, timeToDelay));
 
-  handleTimer = () => {
-
+  handleTimer = async () => {
     this.handleChangeState("auxArray", []);
-
     let array = [];
-
     for (let i = 0; i < this.state.array.length; i++) {
-      setTimeout(() => {
-        array.push(this.state.array[i]);
-        this.handleChangeState("auxArray", array);
-      }, 1000 * Math.pow(2, i))
+      array.push(this.state.array[i]);
+      this.handleChangeState("auxArray", array);
+      await this.wait(1000 * Math.pow(2, i));
     }
   }
 

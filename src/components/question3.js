@@ -1,103 +1,194 @@
 import React, { Component } from "react";
-import {
-  Grid,
-} from "@material-ui/core";
 import '././styles.css'
 
 export default class Question3 extends Component {
 
   render() {
     return (
+      <div className="content" >
+        <div className="header"
+          style={{
+            color: "white",
+            fontSize: "1.5rem",
+            display: "flex",
+            justifyContent: "center"
+          }}
+        >
+          Header
+        </div>
+        <div className="contentColumn">
+          <div className="contentItem">
+            <div className="hero" style={{
+              color: "white",
+              fontSize: "1.5rem",
+              display: "flex",
+              justifyContent: "center",
+            }} >
+              Hero
+                </div>
+          </div>
+          <div className="contentItem">
+            <div className="sidebar" style={{
+              color: "white",
+              fontSize: "1.5rem",
+              display: "flex",
+              justifyContent: "center"
+            }}>
+              Sidebar
+                </div>
+          </div>
+        </div>
+        <div className="contentColumn">
+          <div className="contentItem">
+            <div className="maincontent" style={{
+              color: "white",
+              fontSize: "1.5rem",
+              display: "flex",
+              justifyContent: "center"
+            }} >
+              Main Content
+                </div>
+          </div>
+          <div className="contentItem">
+            <div className="extracontent" style={{
+              color: "white",
+              fontSize: "1.5rem",
+              display: "flex",
+              justifyContent: "center"
+            }} >
+              Extra Content
+                </div>
+          </div>
+        </div>
+        <div className="contentRow">
+          <div className="contentItem">
 
-      <Grid container justify="center" alignItems="center"
-      >
-        <Grid item xs={8}>
-          <Grid container justify="flex-start">
-            <Grid item xs={12}>
-              <div className="header"
-                style={{
-                  color: "white",
-                  fontSize: "1.5rem",
-                  display: "flex",
-                  justifyContent: "center"
-                }}
-              >
-                Header
+            <div className="relatedimages" style={{
+              color: "white",
+              fontSize: "1.5rem",
+              display: "flex",
+              justifyContent: "center"
+            }}>
+              Related Images
                 </div>
-            </Grid>
-            <Grid item xs={4}>
-              <Grid container>
-                <div className="hero" style={{
-                  color: "white",
-                  fontSize: "1.5rem",
-                  display: "flex",
-                  justifyContent: "center"
-                }} >
-                  Hero
+          </div>
+          <div className="contentItem">
+            <div className="relatedposts" style={{
+              color: "white",
+              fontSize: "1.5rem",
+              display: "flex",
+              justifyContent: "center"
+            }} >
+              Related Posts
                 </div>
-                <div className="sidebar" style={{
-                  color: "white",
-                  fontSize: "1.5rem",
-                  display: "flex",
-                  justifyContent: "center"
-                }}>
-                  Sidebar
+          </div>
+        </div>
+        <div className="footer" style={{
+          color: "white",
+          fontSize: "1.5rem",
+          display: "flex",
+          justifyContent: "center"
+        }} >
+          Footer
                 </div>
-              </Grid>
-            </Grid>
-            <Grid item xs={8}>
-              <Grid container>
-                <div className="maincontent" style={{
-                  color: "white",
-                  fontSize: "1.5rem",
-                  display: "flex",
-                  justifyContent: "center"
-                }} >
-                  Main Content
-                </div>
-                <div className="extracontent" style={{
-                  color: "white",
-                  fontSize: "1.5rem",
-                  display: "flex",
-                  justifyContent: "center"
-                }} >
-                  Extra Content
-                </div>
-              </Grid>
-            </Grid>
-            <Grid item xs={8}>
-              <div className="relatedimages" style={{
-                color: "white",
-                fontSize: "1.5rem",
-                display: "flex",
-                justifyContent: "center"
-              }}>
-                Related Images
-                </div>
-            </Grid>
-            <Grid item xs={4}>
-              <div className="relatedposts" style={{
-                color: "white",
-                fontSize: "1.5rem",
-                display: "flex",
-                justifyContent: "center"
-              }} >
-                Related Posts
-                </div>
-            </Grid>
-            <Grid item xs={12}>
-              <div className="footer" style={{
-                color: "white",
-                fontSize: "1.5rem",
-                display: "flex",
-                justifyContent: "center"
-              }} >
-                Footer
-                </div>
-            </Grid>
-          </Grid>
-        </Grid>
-      </Grid>
+      </div>
+
+      // <div id="content">
+      //   <div className="header"
+      //     style={{
+      //       color: "white",
+      //       fontSize: "1.5rem",
+      //       display: "flex",
+      //       justifyContent: "center"
+      //     }}
+      //   >
+      //     Header
+      //   </div>
+
+      //   <did className="contentColumn">
+      // <div className="hero" style={{
+      //   color: "white",
+      //   fontSize: "1.5rem",
+      //   display: "flex",
+      //   justifyContent: "center"
+      // }} >
+      //   Hero
+      //       </div>
+      // <div className="sidebar" style={{
+      //   color: "white",
+      //   fontSize: "1.5rem",
+      //   display: "flex",
+      //   justifyContent: "center"
+      // }}>
+      //   Sidebar
+      //       </div>
+      //   </did>
+      //   <did className="contentColumn">
+
+      //   <div className="maincontent" style={{
+      //     color: "white",
+      //     fontSize: "1.5rem",
+      //     display: "flex",
+      //     justifyContent: "center"
+      //   }} >
+      //     Main Content
+      //         </div>
+      //   <div className="extracontent" style={{
+      //     color: "white",
+      //     fontSize: "1.5rem",
+      //     display: "flex",
+      //     justifyContent: "center"
+      //   }} >
+      //     Extra Content
+      //         </div>
+
+      // </did>
+
+      // </div>
+
+
+
+      //   <div className="maincontent" style={{
+      //     color: "white",
+      //     fontSize: "1.5rem",
+      //     display: "flex",
+      //     justifyContent: "center"
+      //   }} >
+      //   Main Content
+      //           </div>
+      //   <div className="extracontent" style={{
+      //     color: "white",
+      //     fontSize: "1.5rem",
+      //     display: "flex",
+      //     justifyContent: "center"
+      //   }} >
+      //   Extra Content
+      //           </div>
+      // <div className="relatedimages" style={{
+      //   color: "white",
+      //   fontSize: "1.5rem",
+      //   display: "flex",
+      //   justifyContent: "center"
+      // }}>
+      // Related Images
+      //         </div>
+      // <div className="relatedposts" style={{
+      //   color: "white",
+      //   fontSize: "1.5rem",
+      //   display: "flex",
+      //   justifyContent: "center"
+      // }} >
+      // Related Posts
+      //         </div>
+      // <div className="footer" style={{
+      //   color: "white",
+      //   fontSize: "1.5rem",
+      //   display: "flex",
+      //   justifyContent: "center"
+      // }} >
+      // Footer
+      //         </div>
+      // </div >
     )
   }
 }

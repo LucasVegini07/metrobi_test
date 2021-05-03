@@ -6,8 +6,6 @@ import {
   Typography
 } from "@material-ui/core";
 
-import '././styles.css'
-
 export default class Question1 extends Component {
   state = {
     text: "",
@@ -29,16 +27,20 @@ export default class Question1 extends Component {
   }
 
   getDuplicatedValue = () => {
-
-    let newArray = this.state.array.sort();
+    
+    let aux = [];
     let duplicated = [];
-    for (let i = 0; i < newArray.length; i++) {
-      if (newArray[i] === newArray[i + 1])
-        duplicated.push(newArray[i]);
+
+    for (let i = 0; i < this.state.array.length; i++) {
+
+      if (aux.includes(this.state.array[i])) {
+        duplicated.push(this.state.array[i])
+      }
+      else {
+        aux.push(this.state.array[i])
+      }
     }
-
     this.handleChangeState("duplicated", duplicated);
-
   }
 
   render() {

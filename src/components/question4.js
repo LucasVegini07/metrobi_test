@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import {
   Grid, TextField, Button
 } from "@material-ui/core";
-import '././styles.css'
 
 export default class Question4 extends Component {
 
