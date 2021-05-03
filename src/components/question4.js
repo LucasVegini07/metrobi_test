@@ -4,7 +4,7 @@ import {
 } from "@material-ui/core";
 import '././styles.css'
 
-export default class Employee extends Component {
+export default class Question4 extends Component {
 
   state = {
     text: "{}[]()(())"

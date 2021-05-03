@@ -46,7 +46,7 @@ export default class Question6 extends Component {
       <Grid container justify="flex-start" alignItems="center" spacing={2}>
         <Grid item xs={12}>
           <Grid container justify="center">
-            <Grid item xs={2}>
+            <Grid item xs={1}>
               <Button variant="contained"
                 onClick={this.handleParadox}
                 color="primary">

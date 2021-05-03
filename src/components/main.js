@@ -64,7 +64,7 @@ export default class Employee extends Component {
                 color="primary"
                 disabled={this.state.question === 4}
                 onClick={() => this.handleChangeQuestion(4)}
-                fullWidth>
+              >
                 4
               </Button>
             </Grid>
@@ -73,7 +73,7 @@ export default class Employee extends Component {
                 color="primary"
                 disabled={this.state.question === 5}
                 onClick={() => this.handleChangeQuestion(5)}
-                fullWidth>
+              >
                 5
               </Button>
             </Grid>
@@ -82,7 +82,7 @@ export default class Employee extends Component {
                 color="primary"
                 disabled={this.state.question === 6}
                 onClick={() => this.handleChangeQuestion(6)}
-                fullWidth>
+              >
                 6
               </Button>
             </Grid>
@@ -91,7 +91,7 @@ export default class Employee extends Component {
                 color="primary"
                 disabled={this.state.question === 7}
                 onClick={() => this.handleChangeQuestion(7)}
-                fullWidth>
+              >
                 7
               </Button>
             </Grid>
