@@ -1,9 +1,10 @@
 
 .content {
   display: flex;
+  height: 70vh;
+  flex-direction: column;
   justify-content: center;
   align-self: flex-start;
-  flex-wrap: wrap;
 }
 
 .contentColumn {
@@ -13,6 +14,7 @@
 
 .contentItem {
   display: flex;
+  flex: 1;
 }
 
 .contentRow {
@@ -22,46 +24,36 @@
 
 .header{
   height:40px;
-  width: 50vw;
   background-color: rgb(108, 209, 250);
 }
 
 .hero{
-  height: 25vh;
   display: flex;
-  width: 20vw;
+  flex: 1;
   background: rgb(226, 198, 226);
 }
 
 .sidebar{
-  height: 35vh;
-  width: 20vw;
   background: rgb(90, 148, 90);
+  flex: 1;
 }
 .maincontent{
-  height: 40vh;
-  width: 30vw;
   background: #ffcf40;
+  flex: 1;
 }
 .extracontent{
-  height: 20vh;
-  width: 30vw;
+  /* height: 20vh; */
   background: grey;
+  flex: 1;
 }
 .relatedimages{
-  height: 10vh;
-    width: 35vw;
   background: green;
 }
 .relatedposts{
-  height: 10vh;
-  width: 15vw;
   background: pink;
 }
 
 .footer{
-  height:40px;
-  width: 50vw;
   background-color: orange;
   margin-bottom: 8px;
 }

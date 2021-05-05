@@ -5,7 +5,7 @@ export default class Question3 extends Component {
 
   render() {
     return (
-      <div className="content" >
+      <div className="content">
         <div className="header"
           style={{
             color: "white",
@@ -16,53 +16,73 @@ export default class Question3 extends Component {
         >
           Header
         </div>
-        <div className="contentColumn">
-          <div className="contentItem">
-            <div className="hero" style={{
-              color: "white",
-              fontSize: "1.5rem",
-              display: "flex",
-              justifyContent: "center",
+        <div style={{
+          flex: 1,
+          display: "flex",
+          flexDirection: "row"
+
+        }}>
+          <div className="contentColumn" style={{
+            flex: 1,
+            display: "flex",
+            flexDirection: "column"
+          }} >
+            <div className="contentItem" style={{
+              flex: 3
             }} >
-              Hero
+              <div className="hero" style={{
+                color: "white",
+                fontSize: "1.5rem",
+                display: "flex",
+                justifyContent: "center",
+              }} >
+                Hero
                 </div>
-          </div>
-          <div className="contentItem">
-            <div className="sidebar" style={{
-              color: "white",
-              fontSize: "1.5rem",
-              display: "flex",
-              justifyContent: "center"
+            </div>
+            <div className="contentItem" style={{
+              flex: 2
             }}>
-              Sidebar
+              <div className="sidebar" style={{
+                color: "white",
+                fontSize: "1.5rem",
+                display: "flex",
+                justifyContent: "center"
+              }}>
+                Sidebar
                 </div>
+            </div>
           </div>
-        </div>
-        <div className="contentColumn">
-          <div className="contentItem">
-            <div className="maincontent" style={{
-              color: "white",
-              fontSize: "1.5rem",
-              display: "flex",
-              justifyContent: "center"
-            }} >
-              Main Content
+          <div className="contentColumn">
+            <div className="contentItem" style={{
+              flex: 2
+            }}>
+              <div className="maincontent" style={{
+                color: "white",
+                fontSize: "1.5rem",
+                display: "flex",
+                justifyContent: "center"
+              }} >
+                Main Content
                 </div>
-          </div>
-          <div className="contentItem">
-            <div className="extracontent" style={{
-              color: "white",
-              fontSize: "1.5rem",
-              display: "flex",
-              justifyContent: "center"
-            }} >
-              Extra Content
+            </div>
+            <div className="contentItem" style={{
+              flex: 3
+            }}>
+              <div className="extracontent" style={{
+                color: "white",
+                fontSize: "1.5rem",
+                display: "flex",
+                justifyContent: "center"
+              }} >
+                Extra Content
                 </div>
+            </div>
           </div>
         </div>
         <div className="contentRow">
-          <div className="contentItem">
-
+          <div className="contentItem" style={{
+            flex: 1
+          }}>
             <div className="relatedimages" style={{
               color: "white",
               fontSize: "1.5rem",
@@ -72,7 +92,9 @@ export default class Question3 extends Component {
               Related Images
                 </div>
           </div>
-          <div className="contentItem">
+          <div className="contentItem" style={{
+            flex: 2
+          }} >
             <div className="relatedposts" style={{
               color: "white",
               fontSize: "1.5rem",

@@ -7,7 +7,7 @@ export default class Question7 extends Component {
 
   state = {
     carrotTypes: [{ kg: 5, price: 100 }, { kg: 7, price: 150 }, { kg: 3, price: 70 }],
-    capacity: 36,
+    capacity: 38,
     carrotAmount: [0, 0, 0],
   }
 
@@ -65,7 +65,7 @@ export default class Question7 extends Component {
         </Grid>
         <Grid item xs={12}>
           <Typography variant="h6" style={{ textAlign: "center" }}>
-            Bag capacity: 36
+            Bag capacity: {this.state.capacity}
             </Typography>
         </Grid>
       </Grid >)

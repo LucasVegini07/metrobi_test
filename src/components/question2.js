@@ -12,13 +12,17 @@ export default class Question2 extends Component {
     auxArray: [],
   }
 
+
   handleChangeState = (name, value) => {
     this.setState({ [name]: value });
+    console.log(new Date().getTime() - this.time)
   };
 
   wait = (timeToDelay) => new Promise((resolve) => setTimeout(resolve, timeToDelay));
 
   handleTimer = async () => {
+    this.time = new Date().getTime();
+
     this.handleChangeState("auxArray", []);
     let array = [];
     for (let i = 0; i < this.state.array.length; i++) {

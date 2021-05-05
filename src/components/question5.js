@@ -7,7 +7,7 @@ export default class Question5 extends Component {
 
   handleSolver = () => {
 
-    let min = Math.ceil((-1.0 + Math.sqrt(1 + 8 * 100)) / 2.0)
+    let min = Math.ceil((-1.0 + Math.sqrt(1 + 8 * 1000)) / 3.0)
 
     alert(
       "Minimum number of trials in worst case with 2 eggs and 100 floors is: " + min

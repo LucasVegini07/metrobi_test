@@ -10,7 +10,7 @@ export default class Question1 extends Component {
   state = {
     text: "",
     array: [],
-    duplicated: [],
+    duplicated: {},
   }
 
   handleChangeState = (name, value) => {
@@ -27,17 +27,18 @@ export default class Question1 extends Component {
   }
 
   getDuplicatedValue = () => {
-    
-    let aux = [];
-    let duplicated = [];
+
+    let aux = {};
+    let duplicated = {};
 
     for (let i = 0; i < this.state.array.length; i++) {
 
-      if (aux.includes(this.state.array[i])) {
-        duplicated.push(this.state.array[i])
+      if (aux[this.state.array[i]] && !duplicated[this.state.array[i]]) {
+        duplicated[this.state.array[i]] = this.state.array[i];
+        console.log("Duplicated: ", duplicated);
       }
       else {
-        aux.push(this.state.array[i])
+        aux[this.state.array[i]] = this.state.array[i]
       }
     }
     this.handleChangeState("duplicated", duplicated);
@@ -73,12 +74,12 @@ export default class Question1 extends Component {
         <Grid container direction="column" justify="center" alignItems="center" spacing={2}>
           <Grid item xs={12}>
             <Typography variant="h6" >
-              Value: {this.state.array.map((item) => " - " + item + ";")}
+              Value: {this.state.array.map((item) => " " + item + ";")}
             </Typography>
           </Grid>
           <Grid item xs={12}>
             <Typography variant="h6" >
-              Duplicated value: {this.state.duplicated.map((item) => " - " + item + ";")}
+              Duplicated value: {Object.keys(this.state.duplicated).map((item) => " " + item + ";")}
             </Typography>
           </Grid>
         </Grid>

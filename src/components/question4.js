@@ -6,7 +6,7 @@ import {
 export default class Question4 extends Component {
 
   state = {
-    text: "{}[]()(())"
+    text: "{}[]()(()"
   }
 
   handleChangeState = (name, value) => {
